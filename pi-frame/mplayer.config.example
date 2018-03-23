@@ -1,0 +1,14 @@
+# Write your default config options here!
+
+# edit for mplayer user setting
+# by pi 2018/03/23
+
+framedrop=yes
+fs=yes
+msglevel:all=1
+noar=yes
+nolirc=yes
+nomouseinput=yes
+nojoystick=yes
+
+
