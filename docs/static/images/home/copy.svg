@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.08" height="13.08" viewBox="0 0 13.08 13.08">
+  <defs>
+    <clipPath id="clip-path" transform="translate(-0.57 -0.57)">
+      <rect id="SVGID" width="14.21" height="14.21" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g style="clip-path: url(#clip-path)">
+        <rect x="0.5" y="0.5" width="7.31" height="9.51" style="fill: none;stroke: #fff;stroke-miterlimit: 10"/>
+        <polyline points="7.8 3.07 12.58 3.07 12.58 12.58 5.28 12.58 5.28 10.01" style="fill: none;stroke: #fff;stroke-miterlimit: 10"/>
+      </g>
+    </g>
+  </g>
+</svg>
