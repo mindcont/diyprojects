@@ -41,11 +41,11 @@ function getlist(){
 
 #show phoots on /home/pi/Seafile/dev/photos folder.
 function show_pic(){
-  feh --cycle-once --draw-filename \
+  DISPLAY=:0.0 feh --auto-zoom --cycle-once --draw-filename \
   --fontpath /usr/share/fonts/truetype/droid/ --font DroidSansFallbackFull/30 \
   --full-screen --hide-pointer \
   --no-menus --preload -x  \
-  --quiet --reload 10 --slideshow-delay 1 \
+  --quiet --slideshow-delay 5 \
   /home/pi/Seafile/dev/photos
   sleep 3
   echo "show pictures successfully"
@@ -55,7 +55,7 @@ function show_pic(){
 function play_video() {
   # mplayer -fs -framedrop -msglevel all=1 -nomouseinput -nojoystick  -noar -nolirc -playlist videos.list
   # or use ~/.mplayer/config
-  mplayer -playlist videos.list
+  DISPLAY=:0.0 mplayer -playlist videos.list
   sleep 3
   echo "play videos successfully"
 }

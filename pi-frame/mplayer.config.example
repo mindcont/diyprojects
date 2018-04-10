@@ -7,8 +7,9 @@ framedrop=yes
 fs=yes
 msglevel:all=1
 noar=yes
+nojoystick=yes
 nolirc=yes
 nomouseinput=yes
-nojoystick=yes
-
-
+nosound=yes
+vo=x11
+zoom=yes
