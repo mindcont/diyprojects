@@ -11,5 +11,6 @@ nojoystick=yes
 nolirc=yes
 nomouseinput=yes
 nosound=yes
+prefer-ipv4 = yes
 vo=x11
 zoom=yes
