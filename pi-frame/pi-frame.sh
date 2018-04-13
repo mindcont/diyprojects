@@ -31,27 +31,28 @@
 #Generated listfile first on each start.
 function getlist(){
   #cd command run path
-  cd /home/pi/Seafile/dev
-  echo "============$(date '+%Y/%m/%d %H:%M.%S %A')============"
+  cd /home/pi/diy/pi-frame
+  echo $(date '+%Y/%m/%d %A %H:%M:%S')
+  echo "======================================================="
   ls photos/ | sed "s:^:`pwd`/photos/:" > photos.list
   ls videos/ | sed "s:^:`pwd`/videos/:" > videos.list
   sleep 3
   echo "Generated filelist successfully"
 }
 
-#show phoots on /home/pi/Seafile/dev/photos folder.
+#show phoots on /home/pi/diy/pi-frame/photos folder.
 function show_pic(){
   DISPLAY=:0.0 feh --auto-zoom --cycle-once --draw-filename \
   --fontpath /usr/share/fonts/truetype/droid/ --font DroidSansFallbackFull/30 \
   --full-screen --hide-pointer \
   --no-menus --preload -x  \
   --quiet --slideshow-delay 5 \
-  /home/pi/Seafile/dev/photos
+  --filelist photos.list
   sleep 3
   echo "show pictures successfully"
 }
 
-# play videos on /home/pi/Seafile/dev/videos folder.
+# play videos on /home/pi/diy/pi-frame/videos folder.
 function play_video() {
   # mplayer -fs -framedrop -msglevel all=1 -nomouseinput -nojoystick  -noar -nolirc -playlist videos.list
   # or use ~/.mplayer/config
@@ -59,7 +60,7 @@ function play_video() {
   sleep 3
   echo "play videos successfully"
 }
-# sh /home/pi/Seafile/dev/pi-frame.sh | tee -a /home/pi/Seafile/dev/pi-frame-debug.log
+# sh /home/pi/diy/pi-frame/pi-frame.sh | tee -a /home/pi/diy/pi-frame/pi-frame-debug.log
 function main() {
   getlist
   show_pic

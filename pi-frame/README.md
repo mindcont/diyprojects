@@ -33,10 +33,13 @@ $ sudo apt-get install feh
 # mplayer  - movie player
 $ sudo apt-get install mplayer
 
+$ cd ~
 $ git clone https://github.com/mindcont/diyprojects-raspbian diy
 $ cd diy
+$ cp mplayer.config.example ~/.mplayer/config
+$ nano pi-frame.sh
 ```
-before doing this ,just change the folder path `/home/pi/Seafile/dev` as your local path.
+before doing this ,just change the folder path `/home/pi/diy/pi-frame` as your local path.
 ```
 $ bash pi-frame.sh
 ```
@@ -53,7 +56,7 @@ $ crontab -e
 For example，performed once every 15 minutes
 ```
 # minute   hour   day   month   week   command
-30 7-20 * * * bash /home/pi/iot/frame/pi-frame.sh >> "/home/pi/iot/frame/log/$(date +"frame_debug_%Y-%m-%d").log" 2>&1
+30 7-20 * * * bash /home/pi/diy/pi-frame/pi-frame.sh >>"/home/pi/diy/pi-frame/log/frame-debug_$(date +"\%Y-\%m-\%d").log" 2>&1
 ```
 
 ### License
