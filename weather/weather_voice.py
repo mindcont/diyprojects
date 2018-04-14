@@ -147,13 +147,13 @@ def get_weather_api():
     params = {'location':location,'username':username,'t':timestamp}
     sign = weather_api_sign(params,secret_key)
     url = weather_host + '&username='+ username  + '&t='+ timestamp +  '&location='+ location + '&sign='+ sign
-    res = requests.get(url)
+    res = requests.get(url,headers=headers,timeout=3)
     mjson = json.loads(res.text)
     # print mjson
 
     # 报时日期
     today = datetime.now().date().strftime('%m月%d日')
-    weekday = str(datetime.now().weekday())
+    weekday = str(datetime.now().weekday()+1)
     nowHours = datetime.now().strftime('%H点%M分')
     ntime = today + '星期'+weekday + ','+nowHours
 
@@ -176,6 +176,7 @@ def get_weather_api():
                (ntime, weather, tmp, fl, wind_dir, wind_sc, wind_spd)
 
     else :
+        print mjson['HeWeather6'][0]['status']
         text = '现在是%s' %(ntime)
 
     return text

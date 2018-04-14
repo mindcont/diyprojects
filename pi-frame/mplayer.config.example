@@ -12,5 +12,6 @@ nolirc=yes
 nomouseinput=yes
 #nosound=yes
 prefer-ipv4=yes
+really-quiet=yes
 vo=x11
 zoom=yes

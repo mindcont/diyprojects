@@ -26,8 +26,7 @@ $ python weather_voice.py
 
 ```css
 # minute   hour   day   month   week   command
-0 7-21 * * * python /home/pi/iot/weather/weather_voice.py >> "/home/pi/iot/weather/log/weather_debug_$(date +"\%Y-\%m-\%d").log" 2>&1
-
+0 7-21 * * * TERM=xterm-256color python /home/pi/iot/weather/weather_voice.py >> "/home/pi/iot/weather/log/weather_debug_$(date +"\%Y-\%m-\%d").log" 2>&1
 ```
 
 ### License
