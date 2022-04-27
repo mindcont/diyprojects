@@ -1,6 +1,6 @@
 <img src="http://cdn-mindcont.opengps.cn/blog/images/iot/diy-user-avatars.png" width ="256px">
 
-我们的愿景是打造一款基于树莓派的智能家居中心。它的特点不在于重复制造轮子，而是集成现有的开源方案，提供一种低成本、透明、实用的整体解决方案。http://diy.mindcont.com
+我们的愿景是打造一款基于树莓派的智能家居中心。它的特点不在于重复制造轮子，而是集成现有的开源方案，提供一种低成本、透明、实用的整体解决方案。http://diy.wio.me
 
 ### TODO
 
