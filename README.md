@@ -1,17 +1,16 @@
 <img src="https://cdn-mindcont.opengps.cn/blog/images/iot/diy-user-avatars.png" width ="256px">
 
-我们的愿景是打造一款基于树莓派的智能家居中心。它的特点不在于重复制造轮子，而是集成现有的开源方案，提供一种低成本、透明、实用的整体解决方案。https://mindcont.github.io/diyprojects-raspbian/
+我们的愿景是打造一款基于树莓派的智能家居中心。它的特点不在于重复制造轮子，而是集成现有的开源方案，提供一种低成本、透明、实用的整体解决方案。
 
-### TODO
+### TODO列表
 
 - [x] 1 基础能力（远程界面、穿透内网、状态检测）
-- [x] 2 智能相册（feh + mplayer + seafile）
-- [x] 3 天气报时（天气api+tts语音合成）
+- [x] 2 智能相册（feh + mplayer + seafile，见pi-frame文件夹）
+- [x] 3 天气报时（天气api+tts语音合成，见weather文件夹）
 - [x] 4 远程推流（motion + frp + ifttt通知推送）
-- [x] 5 每日一歌（自动抓取网易用户歌单，并随机播放一首，cloudmusic）
-- [ ] 6 语音交互（类似与天猫精灵 dingdang）
-- [ ] 7 宠物识别
-- [ ] 8 自动发微信通知（wechatpy）
+- [x] 5 每日一歌（自动抓取网易用户歌单，并随机播放一首，见cloudmusic文件夹）
+- [x] 6 iphone图片热力轨迹(见gps文件夹)
+
 
 ### Acknowledgements
 
