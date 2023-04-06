@@ -9,7 +9,7 @@
 - [x] 3 天气报时（天气api+tts语音合成，见weather文件夹）
 - [x] 4 远程推流（motion + frp + ifttt通知推送）
 - [x] 5 每日一歌（自动抓取网易用户歌单，并随机播放一首，见cloudmusic文件夹）
-- [x] 6 iphone图片热力轨迹(见gps文件夹)
+- [x] 6 iphone图片热力轨迹(见gps文件夹, 在线demo https://wio.me/gps.html) 
 
 
 ### Acknowledgements
