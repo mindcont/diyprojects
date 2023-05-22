@@ -2,5 +2,5 @@ beautifulsoup4==4.6.0
 html5lib==0.999999999
 httplib2==0.19.0
 numpy==1.22.0
-requests==2.20.0
+requests==2.31.0
 urllib3==1.26.5
